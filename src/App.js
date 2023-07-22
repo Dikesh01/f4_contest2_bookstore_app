@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Navbar from "./Components/Navbar";
+import ShowBooks from "./Components/ShowBooks";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () =>{
+
+    let [harryBooks,setHarryBooks] = useState("");
+    let [sherlockBooks,setsherlockBooks] = useState("");
+    // console.log(sherlockBooks);
+
+    return(
+        <div>
+            <Navbar setHarryBooks={setHarryBooks} setsherlockBooks={setsherlockBooks}/>
+            <ShowBooks harryBooks={harryBooks} sherlockBooks={sherlockBooks} />
+        </div>
+    )
 }
 
 export default App;

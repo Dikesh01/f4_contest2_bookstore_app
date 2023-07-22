@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    color:#ffffff;
+    /* box-sizing: border-box; */
+}
+
+body{
+    background-color: #000000;
+}
+
+/* navbar */
+.navbar{
+    height: 10%;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 35px
+}
+
+/* left_div */
+
+.left_div{
+    display: flex;
+    align-items: center;
+}
+
+.left_div > img{
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.left_div > div > #keazon{
+    font-size: 24px;
+}
+.left_div > div > #book{
+    font-size: 14px;
+    color: #C3BEBE;
+    font-weight: lighter;
+}
+
+/* middle_div */
+
+.middle_div{
+    display: flex;
+}
+
+.middle_div > div{
+    background-color: #424141;
+    padding: 3px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.middle_div #search{
+    font-size: 20px;
+    color: #7e7c7c;
+    margin-right: 30px;
+}
+
+.middle_div > div > input{
+    width: 400px;
+    font-size: 11px;
+    background-color: transparent;
+    border: none;
+}
+
+.middle_div > div > input:focus{
+    outline: none;
+}
+
+.middle_div > button{
+    background-color: transparent;
+    padding: 0 30px;
+    border: 1px solid #7e7c7c;
+    color: #7e7c7c;
+    font-size: 11px;
+}
+
+
+/* right_div */
+
+.right_div{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.right_div span{
+    color: #C3BEBE;
+}
+
+.right_div > img{
+    width: 30px;
+    height: 30px;
+}
+
+/* ------------------------------------------------------------ */
+
+
+.showAll{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 35px;
+
+}

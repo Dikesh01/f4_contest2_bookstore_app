@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 
-const ShowBooks = ({harryBooks,sherlockBooks}) =>{
-    let[bookDetails,setBookDetails] = useState("")
-
-    console.log(bookDetails);
-
-
-
+const ShowBooks = ({harryBooks,sherlockBooks,setBookDetails}) =>{
+    
     // console.log(harryBooks)
     // console.log(sherlockBooks)
-
 
     return(
         <div className="booksContainer">

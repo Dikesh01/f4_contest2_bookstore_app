@@ -132,7 +132,10 @@ body{
 .leftImgDiv > img{
     min-height: 192px;
     max-width: 130px;
+    transform: rotate(-5deg);
 }
+
+
 .title_publishDate{
     display: flex;
     align-items: center;

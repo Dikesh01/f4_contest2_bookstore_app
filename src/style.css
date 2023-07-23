@@ -103,11 +103,20 @@ body{
 /* ------------------------------------------------------------ */
 
 
-.showAll{
-    
+.showAll{ 
     display: flex;
     flex-wrap: wrap;
     gap: 70px;
-    padding: 35px;
+}
 
+.booksContainer{
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bookDetails > img{
+    min-height: 192px;
+    max-width: 130px;
 }
